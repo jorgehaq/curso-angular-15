@@ -1,0 +1,30 @@
+<button [class.disabled]="button_disabled" class="btn btn-danger">Rojo</button>
+<button [class.disabled]="button_disabled" class="btn btn-success">Verde</button>
+<button [class.disabled]="button_disabled" class="btn btn-primary">Azul</button>
+
+
+<button class="btn btn-warning" (click)="button_disabled=!button_disabled">Activar / Desactivar</button>
+
+
+<hr />
+
+<button class="btn btn-primary" 
+(click)="src='https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">
+    Imagen 1
+</button> 
+
+<button class="btn btn-success" 
+(click)="src='https://images.pexels.com/photos/28542726/pexels-photo-28542726/free-photo-of-stylish-man-in-vintage-coat-and-hat-indoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">
+    Imagen 2
+</button> 
+
+<button class="btn btn-danger" 
+(click)="src='https://images.pexels.com/photos/28343863/pexels-photo-28343863/free-photo-of-a-man-standing-in-front-of-a-restaurant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">
+    Imagen 3
+</button> 
+
+
+
+
+
+<img [src]="src">
