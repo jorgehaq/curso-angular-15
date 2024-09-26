@@ -1,0 +1,13 @@
+<input type="text" placeholder="Ingresa tu nombre m" class="form-control mb-4" #name>
+
+
+<div class="alert alert-primary" role="alert" *ngIf="openAlert;else mensaje">
+   <!--<button type="button" class="btn btn-info" (click)="mostrarEnConsola(name.value)">Mostrar Nombre</button>-->
+   <button type="button" class="btn btn-info" (click)="mostrarEnConsola(name.value); openAlert=false">Mostrar Nombre</button>
+</div>
+
+<ng-template #mensaje>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+</ng-template>
